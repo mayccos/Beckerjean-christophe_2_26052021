@@ -12,9 +12,6 @@
             <div id="logo">
                 <img src="C:\Users\motho\Downloads\Projet+2+-+Reservia+FR\Projet 2 - Reservia\images\logo\Reservia@3x.png" alt="logo">
             </div>
-        </header>
-        
-        <section: id='section1'>
             <nav>
                 <ul>
                     <li><a href="#">Hébergements</a></li>
@@ -22,13 +19,16 @@
                     <li><a href="#">S'inscrire</a></li>
                 </ul>
             </nav>
+        </header>
+        
+        <section: id='section1'>
             <article>
                 <h1>Trouvez votre hébergement pour des vacances de rêve
                 </h1>
                 <p>En plein centre ville ou en pleine nature</p>
                 <form action="traitement.php" method="post">
                     <p> 
-                        <label for="localisation"><img src="C:\Users\motho\Downloads\icônes\marqueur-de-carte.png"></label> <input type="text" name="localisation" id="localisation"/>
+                        <label for="localisation"><i class="fas fa-map-marker-alt"></i></label> <input type="text" name="localisation" id="localisation"/>
                         <button type="submit">rechercher</button>
                     </p>
                     <p>
@@ -41,9 +41,15 @@
                             </ul>
                         </label>
                         <label for="information"><i class="fas fa-info-circle"> Plus de 500 logements sont disponibles dans cette ville</i></label>
-                    </p>
+                     </p>
                 </form>
             </article>
         </section:>
+        <section id="section2">
+            <article>
+                <h1>Hébergements à Marseille</h1>
+                <img src="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="photo">
+            </article>
+        </section>
     </body>
 </html>

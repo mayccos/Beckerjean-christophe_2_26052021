@@ -1,11 +1,12 @@
+body ul{
+    list-style: none;
+}
 nav ul{
-    display: flex;
-    list-style-type:none
+    display: flex; 
 }
 nav li{
     margin-right: 20px;
 }
-.section2 img{
-    width: 10px;
-}
+
+ 
 

@@ -1,18 +1,41 @@
-body ul{
-    list-style: none;
+body{
     background-color: white;
-    @font-face {
-        font-family: raleway;
-        src: url(https://fonts.google.com/specimen/Raleway);
-    }
+    font-family: raleway;
+    margin-left: 50px;
+    
 }
-header {
+body ul{
+    list-style-type: none;
+    
+}
+body a:link , body a:visited{
+    color:#0065FC ;
+}
+body a:focus{
+    color: black;
+}
+#logo{
+  margin-top: -40px;
+}
+header ul{
+    display: flex;
+    margin-right: 75px;
+    margin-left: 975px;
+    margin-top: 50px;
     color: #0065FC;
+    justify-content: space-evenly;
 }
-
-header nav li{
-   
-    margin-right: 20px;
+#section1 ul{
+    display: flex;
+    justify-content: space-between;
+    margin-left: -40px;
+    width: 60%;
 }
+#section1 #filtres i{
+    color: #0065FC;
 
+}
+#section2 h1 , #section3 h1{
+    margin-left: 40px;
+}
 

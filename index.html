@@ -5,20 +5,25 @@
         <link rel="stylesheet" href="style.css">
         <script src="https://kit.fontawesome.com/1a6b30f0a3.js" crossorigin="anonymous"></script>
         <title>Projet2 formation da frontend</title>
+        <style type="text/css">
+            a:link{
+                text-decoration: none;
+            }
+        </style>
     </head>
 
     <body>
         <header>
-            <div id="logo">
-                <img src="images/logo/Reservia@3x.png" alt="logo">
-            </div>
             <nav>
                 <ul>
-                    <li><a href="#">Hébergements</a></li>
-                    <li><a href="#">Activités</a></li>
-                    <li><a href="#">S'inscrire</a></li>
+                    <li><a href="#section2">Hébergements</a></li>
+                    <li><a href="#section3">Activités</a></li>
+                    <li><a href="#"><strong>S'inscrire</strong></a></li>
                 </ul>
             </nav>
+            <div id="logo">
+                <img src="images/logo/Reservia.svg" alt="logo">
+            </div>
         </header>
         
         <section id="section1">
@@ -32,16 +37,14 @@
                         <button type="submit">rechercher</button>
                     </p>
                     <p>
-                        <label for="filtres">Filtres
-                            <ul id="flitres">
-                                <li><i class="fas fa-money-bill-wave"></i><a href="#">Economique</a></li>
-                                <li><i class="fas fa-child"></i><a href="#">Familial</a></li>
-                                <li><i class="fas fa-heart"></i><a href="#">Romantique</a></li>
-                                <li><i class="fas fa-dog"></i><a href="#">Animaux autorisés</a></li>
-                            </ul>
-                        </label>
-                        <label for="information"><i class="fas fa-info-circle"> Plus de 500 logements sont disponibles dans cette ville</i></label>
-                     </p>
+                        <ul id="filrtres">Filtres
+                            <li><i class="fas fa-money-bill-wave"></i><a href="#">Economique</a></li>
+                            <li><i class="fas fa-child"></i><a href="#">Familial</a></li>
+                            <li><i class="fas fa-heart"></i><a href="#">Romantique</a></li>
+                            <li><i class="fas fa-dog"></i><a href="#">Animaux autorisés</a></li>
+                        </ul>    
+                        <label for="information"><i class="fas fa-info-circle">Plus de 500 logements sont disponibles dans cette ville</i></label>
+                    </p>
                 </form>
             </article>
         </section>
@@ -130,6 +133,7 @@
         </section>
         <section id="section3">
             <article>
+                <h1>Activités à Marseille</h1>
                 <ul>
                     <li>
                         <a href="#">

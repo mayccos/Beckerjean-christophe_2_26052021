@@ -2,7 +2,7 @@ body{
     background-color: white;
     font-family: raleway;
     margin-left: 50px;
-    
+    font-size: 20px;
 }
 body ul{
     list-style-type: none;
@@ -25,17 +25,83 @@ header ul{
     color: #0065FC;
     justify-content: space-evenly;
 }
+#local{
+    display: flex;
+}
+#local input{
+    height: 50px;
+    border: 2px solid #F2F2F2;
+    width: 235px;
+    font-size: 20px;
+    font-weight: bold;
+    border-left: 0px;
+    border-right: 0px;
+}
+button{
+    color: white;
+    background: #0065FC;
+    width: 135px;
+    height: 52px;
+    border: 3px  solid #0065FC;
+    border-left: none;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+#local i{
+    background-color:#F2F2F2;
+    height: 50px;
+    width: 50px;
+    border: 3px solid #F2F2F2;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 20px;
+}
 #section1 ul{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     margin-left: -40px;
-    width: 60%;
+    width: 70%;
 }
-#section1 #filtres i{
+#section1 ul i{
+    background-color: #DEEBFF;
+}
+#filtres i{
     color: #0065FC;
-
+    border: 3px solid #DEEBFF;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+}#filtres li{
+    border: 3px solid rgb(217, 217, 217);
+    border-left: 0px;
+    border-radius: 50px;
+    text-align: center;
 }
-#section2 h1 , #section3 h1{
+#section1 a{
+    color: black;
+    font-weight: 700;
+}
+#info i{
+    color: #0065FC;
+    border: 1px solid rgb(217, 217, 217) ;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    border-radius: 50px;
+    display: table-cell;
+    vertical-align: middle;
+    margin-top: 370px;
+    font-size: 20px;
+}
+#info p{
+    margin-top: -27px;
+}
+#section2 h1 , #section3 h1 , #info p{
     margin-left: 40px;
 }
 

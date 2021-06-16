@@ -1,14 +1,14 @@
 body{
     background-color: white;
-    font-family: raleway;
+    font-family: 'Raleway';
     margin-left: 50px;
-    font-size: 20px;
+    
 }
 body ul{
     list-style-type: none;
     
 }
-body a:link , body a:visited{
+body a:link , body a:visited , i{
     color:#0065FC ;
 }
 body a:focus{
@@ -36,6 +36,10 @@ header ul{
     font-weight: bold;
     border-left: 0px;
     border-right: 0px;
+    color: black;
+}
+::placeholder{
+    color: black;
 }
 button{
     color: white;
@@ -47,7 +51,7 @@ button{
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
     font-weight: bold;
-    font-size: 20px;
+    
 }
 #local i{
     background-color:#F2F2F2;
@@ -59,49 +63,130 @@ button{
     display: table-cell;
     vertical-align: middle;
     text-align: center;
-    font-size: 20px;
+    
 }
 #section1 ul{
     display: flex;
     justify-content:space-between;
     margin-left: -40px;
-    width: 70%;
+    width: 80%;
 }
 #section1 ul i{
     background-color: #DEEBFF;
 }
 #filtres i{
-    color: #0065FC;
     border: 3px solid #DEEBFF;
-    height: 50px;
+    height: 30px;
     width: 50px;
     border-radius: 50px;
-}#filtres li{
+    padding-top: 22px;
+    margin-top: -3px;
+    text-align: center;
+}
+#ani{
+    width: 250px;
+}
+#filtres li{
     border: 3px solid rgb(217, 217, 217);
     border-left: 0px;
     border-radius: 50px;
-    text-align: center;
+   
+    height: 55px;
+    width: 200px;
 }
-#section1 a{
+#section1 a , #section2 a , #section2 p , #section3 h2{
     color: black;
     font-weight: 700;
 }
 #info i{
-    color: #0065FC;
     border: 1px solid rgb(217, 217, 217) ;
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
     text-align: center;
     border-radius: 50px;
     display: table-cell;
     vertical-align: middle;
     margin-top: 370px;
-    font-size: 20px;
+    
 }
+#
 #info p{
-    margin-top: -27px;
+    margin-top: -20px;
 }
 #section2 h1 , #section3 h1 , #info p{
     margin-left: 40px;
 }
+#section2 article , #section2 aside{
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding-top: 50px;
+    height: 625px;
+}
+#section2 article{
+    width: 880px;
+}
+#section2 aside{
+    width: 420px;
+}
+#ch{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#ch li{
+    width: 237px;
+    height: 210px;
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 20px;
+}
+#section2 article li{
+
+}
+#section2 article img{
+    width: 237px;
+    height: 117px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+#section2 article p{
+   
+}
+#section2  h1{
+    font-size: 1.5em;
+}
+#section2 h2{
+    font-size: 1em;
+    padding-left: 15px;
+}
+#section2 p{
+    padding: 15px;
+    font-size: 0.9em;
+    font-weight: normal;
+}
+#section2{
+    display: flex;
+    justify-content: space-evenly;
+}
+#section2 aside img{
+    height: 133px;
+    width: 127px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    float: left;
+}
+aside li{
+    width: 335px;
+    height: 135px;
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 20px;
+    justify-content: space-between;
+}
+aside p , aside h2{
+    margin-right: -20px;
+    flex-wrap: wrap;
+}
+
+
 

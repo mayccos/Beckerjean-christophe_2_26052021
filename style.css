@@ -1,4 +1,4 @@
-body{
+header , section{
     background-color: white;
     font-family: 'Raleway';
     margin-left: 50px;
@@ -32,7 +32,7 @@ header ul{
     height: 50px;
     border: 2px solid #F2F2F2;
     width: 235px;
-    font-size: 20px;
+    font-size: 1.1em;
     font-weight: bold;
     border-left: 0px;
     border-right: 0px;
@@ -63,17 +63,22 @@ button{
     display: table-cell;
     vertical-align: middle;
     text-align: center;
-    
+}
+#section1 nav{
+    display: flex;
 }
 #section1 ul{
     display: flex;
-    justify-content:space-between;
-    margin-left: -40px;
     width: 80%;
+}
+#section1 nav p{
+    padding-top: 22px;
+    
 }
 #section1 ul i{
     background-color: #DEEBFF;
 }
+
 #filtres i{
     border: 3px solid #DEEBFF;
     height: 30px;
@@ -82,22 +87,36 @@ button{
     padding-top: 22px;
     margin-top: -3px;
     text-align: center;
+    
 }
-
 #ani{
-    width: 250px;
+    width: 220px;
+    margin-left: 25px;
+}
+#éco{
+    width: 193px;
+    
+}
+#fam{
+    width: 152px;
+    margin-left: 25px;
+}
+#rom{
+    width: 182px;
+    margin-left: 25px;
 }
 #filtres li{
     border: 3px solid rgb(217, 217, 217);
     border-left: 0px;
     border-radius: 50px;
-   
     height: 55px;
-    width: 200px;
+    
 }
 #section1 a , #section2 a , #section2 p , #section3 h2{
     color: black;
     font-weight: 700;
+}#info{
+    text-align: left;
 }
 #info i{
     border: 1px solid rgb(217, 217, 217) ;
@@ -108,26 +127,29 @@ button{
     display: table-cell;
     vertical-align: middle;
     margin-top: 370px;
-    
 }
-#
 #info p{
     margin-top: -20px;
 }
-#section2 h1 , #section3 h1 , #info p{
+#section2 h1 , #info p{
     margin-left: 40px;
+}
+#section2{
+    display: flex;
 }
 #section2 article , #section2 aside{
     background-color: #F2F2F2;
     border-radius: 20px;
     padding-top: 50px;
     height: 625px;
+    align-items: flex-start;
 }
 #section2 article{
     width: 880px;
 }
 #section2 aside{
     width: 420px;
+    margin-left: 40px;
 }
 #ch{
     display: flex;
@@ -141,17 +163,11 @@ button{
     border: 5px solid white;
     border-radius: 20px;
 }
-#section2 article li{
-
-}
 #section2 article img{
     width: 237px;
     height: 117px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-}
-#section2 article p{
-   
 }
 #section2  h1{
     font-size: 1.5em;
@@ -160,14 +176,13 @@ button{
     font-size: 1em;
     padding-left: 15px;
 }
-#section2 p{
-    padding: 15px;
-    font-size: 0.9em;
-    font-weight: normal;
+#mer , #pan , #ami {
+   margin-top: 30px; 
 }
-#section2{
-    display: flex;
-    justify-content: space-evenly;
+#section2 p{
+    padding-left: 15px;
+    font-size: 1em;
+    font-weight: normal;
 }
 #section2 aside img{
     height: 133px;
@@ -183,10 +198,86 @@ aside li{
     border: 5px solid white;
     border-radius: 20px;
     justify-content: space-between;
+} 
+aside a{
+   
+}#section3 h2{
+    font-size: 1em;
+    padding-left: 15px;
 }
-aside p , aside h2{
-    margin-right: -20px;
-    flex-wrap: wrap;
+#section3 li{
+    width: 300px;
+    border: 1px solid #F2F2F2;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    box-shadow: 3px 3px 3px #F2F2F2;
+}#section3 img{
+    width: 300px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+#port img , #cala img{
+    height: 390px;
+}
+#port{
+    margin-left: -40px;
+    height: 440px;
+
+}
+#fort img{
+    height: 180px;
+}
+#fort{
+    height: 235px;
+    margin-left: 310px;
+    margin-top: -440px;
+} 
+#frioul img{
+    height: 110px;
+}   
+#frioul{
+    height: 165px;
+    margin-left: 310px;
+    margin-top: 40px;
+}
+#cala{
+    height: 440px;
+    margin-left: 660px;
+    margin-top: -440px;
+}
+#garde img{
+    height: 140px;
+}
+#garde{
+    height: 195px;
+    margin-left: 1000px;
+    margin-top: -440px;
+}
+#long img{
+    height: 155px;
+}
+#long{
+    height: 210px;
+    margin-left: 1000px;
+    margin-top: 35px;
+}
+footer{
+    height: 215px;
+    background-color: #F2F2F2;
+    margin-left: 0px;
+}
+#propos{
+    margin-left: 15px;
+}
+#heber{
+    margin-left: 460px;
+    margin-top: -155px;
+}
+#assist{
+    margin-left: 920px;
+    margin-top: -123px;
 }
 
 

@@ -25,6 +25,9 @@ header ul{
     color: #0065FC;
     justify-content: space-evenly;
 }
+header ul li a:hover{
+    border-top: #0065FC;
+}
 #local{
     display: flex;
     margin-top: 40px;
@@ -231,7 +234,7 @@ aside p , aside h2{
 #fle{
     color: black;
     margin-top: 30px;
-    margin-left: 130px;
+    margin-left: 100px;
     font-size: 1.5em;
 }
 aside div{
@@ -334,21 +337,25 @@ footer{
         flex-wrap: wrap-reverse;
         margin-left: auto;
     }
-    #heb{
-        margin-left: -40px;
+    #heb a:focus , #act a:focus{
+        text-decoration-style:solid;
     }
+    #heb{
+        margin-left: -30px;
+        margin-top: 20px;}
     #act{
         margin-left: 70px;
+        margin-top: 20px;
     }
     #ins{
         margin-top: -30px;
         margin-left: 230px;
     }
     #logo{
-        margin-top: -80px;
+        margin-top: -100px;
     }
     h1{
-        font-size: auto;
+        font-size: 1.2em;
         max-width: 80%;
     }
     p{
@@ -356,7 +363,7 @@ footer{
        
     }
     #section1 h1{
-        margin-top: 40px;
+        margin-top: 60px;
     }
     #local i{
         width: 40px;
@@ -428,5 +435,62 @@ footer{
         margin-left: 40px;
         width: 70%;
     }
-    
-    
+    #section2 aside{
+        margin-left: -750px;
+        border-radius: 0px;
+        width: 420px;
+        height: 600px;
+        padding-top: 0px;
+       
+    }
+    #section2 h1{
+        margin-left:20px;
+        font-size: 1.2em;
+       
+    }
+    #section2 aside div i{
+        margin-top: 20px;
+        font-size: 1.2em;
+    }
+    aside li , #section2 article li{
+        margin-left: -20px;
+        width: 340px;
+    }
+    #section2 article{
+        margin-top: 550px;
+        margin-left:-20px;
+        border-radius: 0px;
+        background-color: white;
+    }
+    #section2 article ul{
+        flex-direction: column;
+    }
+    #section2 article img{
+        width: 340px;
+    }
+    #plus{
+        margin-top: -20px;
+    }
+
+    #section3{
+        margin-top: 1050px;
+    }
+    #section3 li{
+        margin-left: -40px;
+    }
+    #section3 img , #section3 h2{
+        width: 340px;
+    }
+    #fort{
+        margin-top: 350px;
+        width: 340px;
+    }#frioul{
+        margin-top: 100px;
+    }
+    #cala{
+        margin-top: 400px;
+
+    }
+    footer{
+        margin-top: 1000px;
+    }

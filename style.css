@@ -6,13 +6,20 @@ body{
 }
 body ul{
     list-style-type: none;
-    
 }
-body a:link , body a:visited , i{
+#ins a , i{
     color:#0065FC ;
 }
-body a:focus{
+header a{
+    border: 2px solid transparent;
+}
+#heb a , #act a , #heb a:visited , #act a:visited{
     color: black;
+}
+#heb a:hover , #act a:hover{
+    color: #0065FC;
+    border-top-color: #0065FC;
+    padding-top: 30px;
 }
 #logo{
   margin-top: -40px;
@@ -25,8 +32,8 @@ header ul{
     color: #0065FC;
     justify-content: space-evenly;
 }
-header ul li a:hover{
-    border-top: #0065FC;
+body a:link{
+    text-decoration: none;
 }
 #local{
     display: flex;
@@ -311,8 +318,9 @@ footer{
     margin-top: 60px;
     height: 215px;
     background-color: #F2F2F2;
-    margin-left: 0px;
+    margin-left: -50px;
     padding-top: 50px;
+    width: 2000px;
 }
 
 #propos{
@@ -326,10 +334,10 @@ footer{
     margin-left: 920px;
     margin-top: -123px;
 }
-@media all and (max-device-width: 480px){
+@media all and (max-width: 480px){
     body{
         height: auto;
-        width: auto;
+        width: 100%;
         margin-left: 20px;
     }
     header ul{
@@ -337,26 +345,30 @@ footer{
         flex-wrap: wrap-reverse;
         margin-left: auto;
     }
-    #heb a:focus , #act a:focus{
-        text-decoration-style:solid;
-    }
     #heb{
-        margin-left: -30px;
-        margin-top: 20px;}
+        margin-left: -25px;
+        margin-top: 20px;
+        
+    }
     #act{
-        margin-left: 70px;
+        margin-left: 80px;
         margin-top: 20px;
     }
     #ins{
         margin-top: -30px;
-        margin-left: 230px;
+        margin-left: 250px;
+    }
+    #heb a:hover , #act a:hover{
+        border-top-color: transparent;
+        border-bottom-color: #0065FC;
+        padding-bottom: 20px;
     }
     #logo{
         margin-top: -100px;
     }
     h1{
         font-size: 1.2em;
-        max-width: 80%;
+        width:80%;
     }
     p{
         font-size: 0.8em;
@@ -436,31 +448,32 @@ footer{
         width: 70%;
     }
     #section2 aside{
-        margin-left: -750px;
+        margin-left: -600px;
         border-radius: 0px;
-        width: 420px;
+        width: 150%;
         height: 600px;
         padding-top: 0px;
-       
     }
     #section2 h1{
         margin-left:20px;
         font-size: 1.2em;
-       
     }
     #section2 aside div i{
         margin-top: 20px;
         font-size: 1.2em;
+        margin-left: -30px;
     }
     aside li , #section2 article li{
-        margin-left: -20px;
+        margin-left: -30px;
         width: 340px;
     }
     #section2 article{
-        margin-top: 550px;
+        margin-top: 580px;
         margin-left:-20px;
         border-radius: 0px;
         background-color: white;
+       
+        
     }
     #section2 article ul{
         flex-direction: column;
@@ -473,24 +486,38 @@ footer{
     }
 
     #section3{
-        margin-top: 1050px;
+        margin-top: 1030px;
     }
     #section3 li{
         margin-left: -40px;
-    }
-    #section3 img , #section3 h2{
         width: 340px;
+        height: 190px;
     }
-    #fort{
-        margin-top: 350px;
+    #section3 img{
         width: 340px;
-    }#frioul{
-        margin-top: 100px;
+        height: 135px;
     }
-    #cala{
-        margin-top: 400px;
-
+    #fort , #frioul , #cala , #garde , #long{
+        margin-top: 20px;
     }
     footer{
-        margin-top: 1000px;
+        height: 500px;
+        width: 380px;
+        margin-top: 30px;
+        margin-left:-20px;
+        flex-direction: column;
+    }
+    #propos{
+        margin-left: -20px;
+    }
+    #heber{
+        margin-left: -20px;
+        margin-top: 50px;
+    }
+    #assist{
+        margin-top: 50px;
+        margin-left: -20px;
+    }
+       
+        
     }

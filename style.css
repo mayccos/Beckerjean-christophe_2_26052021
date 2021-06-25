@@ -2,10 +2,13 @@ body{
     background-color: white;
     font-family: 'Raleway';
     margin-left: 50px;
-    width: 1435px;
+   
 }
 body ul{
     list-style-type: none;
+}
+body a:link{
+    text-decoration: none;
 }
 #ins a , i{
     color:#0065FC ;
@@ -21,9 +24,6 @@ header a{
     border-top-color: #0065FC;
     padding-top: 30px;
 }
-#logo{
-  margin-top: -40px;
-}
 header ul{
     display: flex;
     margin-right: 75px;
@@ -32,8 +32,8 @@ header ul{
     color: #0065FC;
     justify-content: space-evenly;
 }
-body a:link{
-    text-decoration: none;
+#logo{
+    margin-top: -40px;
 }
 #local{
     display: flex;
@@ -129,7 +129,7 @@ button{
 }#filtres a:hover{
     color: #0065FC;
 }
-#section1 a , #section2 a , #section2 p , #section3 h2{
+#section1 a , #section2 a , #section2 p , #section3 h3{
     color: black;
     font-weight: 700;
 }#info{
@@ -149,7 +149,7 @@ button{
 #info p{
     margin-top: -20px;
 }
-#section2 h1 , #info p{
+#section2 h2 , #info p{
     margin-left: 40px;
 }
 #section2{
@@ -194,15 +194,15 @@ button{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
-#section2  h1{
+#section2  h2{
     font-size: 1.5em;
 }
-#section2 article h2{
+#section2 article h3{
     font-size: 1.1em;
     padding-left: 15px;
     margin-top: 5px;
 }
-#section2 aside h2{
+#section2 aside h3{
     font-size: 1.1em;
     margin-left: 15px;
 }
@@ -234,7 +234,7 @@ aside li{
     border-radius: 20px;
     justify-content: space-between;
 }
-aside p , aside h2{
+aside p , aside h3{
     margin-top: 5px;
     padding-left: 140px;
 }
@@ -250,7 +250,7 @@ aside div{
 #section3{
     margin-top: 60px;
 }
-#section3 h2{
+#section3 h3{
     font-size: 1em;
     padding-left: 15px;
 }
@@ -320,9 +320,11 @@ footer{
     background-color: #F2F2F2;
     margin-left: -50px;
     padding-top: 50px;
-    width: 2000px;
 }
-
+footer a{
+    font-weight: normal;
+    color: black;
+}
 #propos{
     margin-left: 15px;
 }
@@ -334,19 +336,19 @@ footer{
     margin-left: 920px;
     margin-top: -123px;
 }
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 760px){
     body{
-        height: auto;
+        height: 1.2em;
         width: 100%;
         margin-left: 20px;
     }
     header ul{
-        font-size: auto;
+        font-size: 1.2em;
         flex-wrap: wrap-reverse;
         margin-left: auto;
     }
     #heb{
-        margin-left: -25px;
+        margin-left: -40px;
         margin-top: 20px;
         
     }
@@ -366,7 +368,7 @@ footer{
     #logo{
         margin-top: -100px;
     }
-    h1{
+    h2{
         font-size: 1.2em;
         width:80%;
     }
@@ -374,7 +376,7 @@ footer{
         font-size: 0.8em;
        
     }
-    #section1 h1{
+    #section1 h2{
         margin-top: 60px;
     }
     #local i{
@@ -412,21 +414,21 @@ footer{
        
     }
     #éco{
-        width: 150px;
+        width: 48%;
         
     }
     #fam{
-        width: 130px;
+        width: 39%;
         margin-left: 160px;
         margin-top: -56px;
     }
     #rom{
-        width: 140px;
+        width: 45%;
         margin-left: 0px;
         margin-top: 20px;
     }
     #ani{
-        width: 200px;
+        width: 60%;
         margin-left: 0px;
         margin-top: 20px;
     }
@@ -449,13 +451,13 @@ footer{
         width: 70%;
     }
     #section2 aside{
-        margin-left: -600px;
+        margin-left: -220%;
         border-radius: 0px;
-        width: 150%;
+        
         height: 600px;
         padding-top: 0px;
     }
-    #section2 h1{
+    #section2 h2{
         margin-left:20px;
         font-size: 1.2em;
     }
@@ -488,14 +490,16 @@ footer{
 
     #section3{
         margin-top: 1030px;
+        
     }
     #section3 li{
-        margin-left: -40px;
-        width: 340px;
+        margin-left: -15%;
+        width: 100%;
         height: 190px;
+        
     }
     #section3 img{
-        width: 340px;
+        width: 100%;
         height: 135px;
     }
     #fort , #frioul , #cala , #garde , #long{
@@ -505,20 +509,21 @@ footer{
         height: 500px;
         width: 380px;
         margin-top: 30px;
-        margin-left:-20px;
+       margin-left: -20px;
         flex-direction: column;
     }
-    #propos{
+    footer h3{
+        margin-left: 20px;
+    }
+    #propos {
         margin-left: -20px;
     }
     #heber{
         margin-left: -20px;
-        margin-top: 50px;
+        margin-top: 20px;
     }
     #assist{
-        margin-top: 50px;
         margin-left: -20px;
-    }
-       
-        
-    }
+        margin-top: 20px;
+    }    
+}

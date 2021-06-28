@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="initial-scale=1.0, user-scalable=yes"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="normalize.css">
         <script src="https://kit.fontawesome.com/1a6b30f0a3.js" crossorigin="anonymous"></script>
         <title>Projet2 formation da frontend</title>
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -28,7 +29,7 @@
                 <p>En plein centre ville ou en pleine nature</p>
                 <form action="traitement.php" method="post">
                     <div id="local">
-                        <label for="localisation"><i class="fas fa-map-marker-alt"></i></label><input type="text" placeholder="Marseille,France" name="localisation" id="localisation"/><button type="submit">Rechercher</button>
+                        <label for="localisation"><i class="fas fa-map-marker-alt"></i></label><input type="text" placeholder="Marseille,France" name="localisation" id="localisation"/><button type="submit" id="rechercher"><a href="#">Rechercher</a><i class="fas fa-search"></i></button>
                     </div>
                     <nav>
                         <p><strong>Filtres</strong></p>
@@ -112,7 +113,7 @@
             <aside>
                 <div><h2>Les plus populaires</h2><i class="fas fa-chart-line" id="fle"></i></div>
                 <ul>
-                    <li>
+                    <li id="sol">
                         <a href="#">
                             <img src="images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="photo" id="HôtelLesoleildumatin"><br/>
                             <h3>Hôtel Le soleil du matin</h3>
@@ -120,7 +121,7 @@
                             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
                         </a>
                     </li>
-                    <li>
+                    <li id="coe">
                         <a href="#">
                             <img src="images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="photo" id="Aucoeurdel'eau"><br/>
                             <h3>Au coeur de l'eau Chambres d'hôtes</h3>
@@ -128,7 +129,7 @@
                             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
                         </a>
                     </li>
-                    <li>
+                    <li id="hot">
                         <a href="#">
                             <img src="images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="photo" id="Hôteltoutbleuetblanc"><br/>
                             <h3>Hôtel Tout bleu et Blanc</h3>
@@ -183,23 +184,21 @@
             </article>
         </section>
         <footer>
-            <nav>
-                <h3><strong>A propos</strong></h3>
-                <ul id="propos">
-                    <li><a href="#">Fonctionnement du site</a></li>
-                    <li><a href="#">Conditions générales de vente</a></li>
-                    <li><a href="#">Données et confidentialité</a></li>
-                </ul>
-                <h3><strong>Nos hébergements</strong></h3>
-                <ul id="heber">
-                    <li><a href="#">Charte qualité</a></li>
-                    <li><a href="#">Soumettre votre hôtel</a></li>
-                </ul>
-                <h3><strong>Assitance</strong></h3>
-                <ul id="assist">
-                    <li><a href="#">Centre d'aide</a></li>
-                    <li><a href="#">Nous contacter</a></li>
-                </ul>
+            <nav id="f1">
+                <h3>A propos</h3>
+                <ul><li><a href="#">Fonctionnement du site</a></li></ul>
+                <ul><li><a href="#">Conditions générales de vente</a></li></ul>
+                <ul><li><a href="#">Données et confidentialité</a></li></ul>
+            </nav>
+            <nav id="f2">
+                <h3>Nos hébergements</h3>
+                <ul><li><a href="#">Charte qualité</a></li></ul>
+                <ul><li><a href="#">Soumettre votre hôtel</a></li></ul>    
+            </nav>
+            <nav id="f3">
+                <h3>Assitance</h3>
+                <ul><li><a href="#">Centre d'aide</a></li></ul>
+                <ul><li><a href="#">Nous contacter</a></li></ul>    
             </nav>
         </footer>
     </body>

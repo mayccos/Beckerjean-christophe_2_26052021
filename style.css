@@ -1,52 +1,61 @@
 body{
-    background-color: white;
+    background-color: white; /*background color + font type*/
     font-family: 'Raleway';
-    margin-left: 50px;
-   
+    
 }
 body ul{
-    list-style-type: none;
+    list-style-type: none; /*no bullet in page lists*/
 }
 body a:link{
-    text-decoration: none;
+    text-decoration: none; /*no decoration on the links*/
+}header , section , footer h3{ /* small margin on the left */
+    margin-left: 1%;
 }
-#ins a , i{
+#ins a , i{               /* enhancement to register in the header and icons*/
     color:#0065FC ;
+}
+#heb a , #act a , #heb a:visited , #act a:visited , footer a{ /*black for the rest of the lists*/
+    color: black;
 }
 header a{
     border: 2px solid transparent;
 }
-#heb a , #act a , #heb a:visited , #act a:visited{
-    color: black;
-}
-#heb a:hover , #act a:hover{
+#heb a:hover , #act a:hover , #ins a:hover{ /*line 20 to 27 transparent border for border above headerites when hovering */
     color: #0065FC;
     border-top-color: #0065FC;
     padding-top: 30px;
 }
 header ul{
     display: flex;
-    margin-right: 75px;
-    margin-left: 975px;
-    margin-top: 50px;
+    margin-left: 66%;
+    margin-top: 3%;                /*lines 28 to 34 setting up the header list */
     color: #0065FC;
     justify-content: space-evenly;
 }
 #logo{
-    margin-top: -40px;
+    margin-top: -2%;  /*placement of the logo in relation to the list in header */
 }
 #local{
-    display: flex;
+    display: flex;  /* setting up the location div*/
     margin-top: 40px;
 }
-#local i{
+#local label i{   /*setting up inset with marker page icon*/
     color: black;
+    background-color:#F2F2F2;
+    height: 50px;
+    width: 50px;
+    border: 3px solid #F2F2F2;    
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
 }
-#local input{
+#local input{   /*setting up text box for city choice*/
     height: 50px;
     border: 2px solid #F2F2F2;
     width: 235px;
-    font-size: 1.1em;
+    font-size: 1.1em;                   
     font-weight: bold;
     border-left: 0px;
     border-right: 0px;
@@ -55,7 +64,7 @@ header ul{
 ::placeholder{
     color: black;
 }
-button{
+button{  /*setting up button*/
     color: white;
     background: #0065FC;
     width: 135px;
@@ -65,20 +74,10 @@ button{
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
     font-weight: bold;
-    
+}#local button a , #local button i{
+    color: white;
 }
-#local i{
-    background-color:#F2F2F2;
-    height: 50px;
-    width: 50px;
-    border: 3px solid #F2F2F2;
-    border-bottom-left-radius: 20px;
-    border-top-left-radius: 20px;
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-}
-#section1 nav{
+#section1 nav{  /*lines 78 to 92 setting up the filter list */
     display: flex;
     margin-top: 30px;
 }
@@ -88,13 +87,11 @@ button{
 }
 #section1 nav p{
     padding-top: 22px;
-    
 }
 #section1 ul i{
     background-color: #DEEBFF;
 }
-
-#filtres i{
+#filtres i{  /* icon size and centering */
     border: 3px solid #DEEBFF;
     height: 30px;
     width: 50px;
@@ -102,15 +99,13 @@ button{
     padding-top: 22px;
     margin-top: -3px;
     text-align: center;
-    
 }
-#ani{
+#ani{    /* lines 102 to 122 size of the different categories of filters + border */
     width: 220px;
     margin-left: 25px;
 }
 #éco{
     width: 193px;
-    
 }
 #fam{
     width: 152px;
@@ -125,14 +120,14 @@ button{
     border-left: 0px;
     border-radius: 50px;
     height: 55px;
-    
-}#filtres a:hover{
+}#filtres a:hover{  /* color when hovering*/
     color: #0065FC;
 }
-#section1 a , #section2 a , #section2 p , #section3 h3{
+#section1 a , #section2 a , #section2 p , #section3 h3{  /* color when no hovering*/
     color: black;
     font-weight: 700;
-}#info{
+}
+#info{   /*lines 129 to 145 setting up icon and text info*/
     text-align: left;
     margin-top: 40px;
 }
@@ -149,46 +144,52 @@ button{
 #info p{
     margin-top: -20px;
 }
-#section2 h2 , #info p{
+#section2 h2 , #info p{  
     margin-left: 40px;
 }
-#section2{
+#section2{   /*alignment aside and article*/
     display: flex;
     margin-top: 60px;
 }
-#section2 img{
+#section2 img{   /*avoid blurry images */
     object-fit: cover;
 }
-#section2 article , #section2 aside{
+#section2 article , #section2 aside{  /*item and aside skin and height */
     background-color: #F2F2F2;
     border-radius: 20px;
     padding-top: 50px;
     height: 625px;
-    align-items: flex-start;
 }
-#section2 article{
+#section2 article{  /*lines 1612 to 169 width and setting aside and article on width*/
     width: 880px;
+    padding-right: 2%;
 }
 #section2 aside{
     width: 420px;
     margin-left: 40px;
 }
-#can , #por , #mou , #mer , #pan , #ami , aside li{
+#sol{   /*line 170 to 175 setting up aside content*/
+    margin-top: -4%;
+}
+#coe , #hot{
+    margin-top: 4%;
+}
+#can , #por , #mou , #mer , #pan , #ami , aside li{  /* border of the lists in section2*/
     box-shadow: 3px 3px 3px gainsboro;
 }
-#ch{
+#ch{     /* alignment,deviation and line break for section2 item lists*/
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-#ch li{
+#ch li{   /*characteristics of Article 2*/
     width: 237px;
     height: 210px;
     background-color: white;
     border: 5px solid white;
     border-radius: 20px;
 }
-#section2 article img{
+#section2 article img{ /* characteristics of the images of article 2*/
     width: 237px;
     height: 117px;
     border-top-left-radius: 20px;
@@ -202,31 +203,32 @@ button{
     padding-left: 15px;
     margin-top: 5px;
 }
-#section2 aside h3{
+#section2 aside h3{ /*location and size photo titles*/
     font-size: 1.1em;
     margin-left: 15px;
+    
 }
-#mer , #pan , #ami {
+#mer , #pan , #ami { /* deviation from the 2nd line of photos*/
    margin-top: 30px; 
 }
-#section2 article p{
+#section2 article p{  /* setting up show more*/
     padding-left: 15px;
     font-size: 1em;
     font-weight: normal;
 }
-#section2 aside p{
+#section2 aside p{  /*characteristics of the paragraphs under the photos section2 aside*/
     font-size: 1em;
     font-weight: normal;
     margin-left: 15px;
 }
-#section2 aside img{
+#section2 aside img{  /*characteristics of image section2 aside*/
     height: 133px;
     width: 127px;
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
     float: left;
 }
-aside li{
+aside li{   /*characteristics of aside's list*/
     width: 335px;
     height: 135px;
     background-color: white;
@@ -234,28 +236,27 @@ aside li{
     border-radius: 20px;
     justify-content: space-between;
 }
-aside p , aside h3{
+aside p , aside h3{  /*adjusting the locations of paragraphs and  section2 aside*/
     margin-top: 5px;
     padding-left: 140px;
 }
-#fle{
+#fle{  /*setting up the arrow logo of section2 aside*/
     color: black;
     margin-top: 30px;
     margin-left: 100px;
     font-size: 1.5em;
 }
-aside div{
+aside div{  /*alignment logo and title*/
     display: flex;
 }
-#section3{
+#section3{  /*margin to section3*/
     margin-top: 60px;
 }
-#section3 h3{
+#section3 h3{  /*characteristics titles under image*/
     font-size: 1em;
     padding-left: 15px;
 }
-
-#section3 li{
+#section3 li{  /*lines 258 to 316 formatting lists with image in section 3*/
     width: 300px;
     border: 1px solid #F2F2F2;
     border-bottom-left-radius: 20px;
@@ -303,7 +304,7 @@ aside div{
 }
 #garde{
     height: 195px;
-    margin-left: 1000px;
+    margin-left: 1020px;
     margin-top: -441px;
 }
 #long img{
@@ -311,93 +312,88 @@ aside div{
 }
 #long{
     height: 210px;
-    margin-left: 1000px;
+    margin-left: 1020px;
     margin-top: 34px;
 }
-footer{
+footer{   /*lign317 to 348 setting of footer*/
     margin-top: 60px;
     height: 215px;
     background-color: #F2F2F2;
-    margin-left: -50px;
     padding-top: 50px;
+    display: flex;
 }
 footer a{
     font-weight: normal;
     color: black;
 }
-#propos{
-    margin-left: 15px;
+#f1{
+    margin-left: 1%;
 }
-#heber{
-    margin-left: 460px;
-    margin-top: -155px;
+#f2{
+    margin-left: 12%;
 }
-#assist{
-    margin-left: 920px;
-    margin-top: -123px;
+#f3{
+    margin-left: 17%;
 }
-@media only screen and (max-width: 760px){
-    body{
-        height: 1.2em;
-        width: 100%;
-        margin-left: 20px;
+footer h3{
+    font-size: 1.1em;
+}
+#f1 ul{
+    margin-left: -15%;
+}
+#f2 ul{
+    margin-left: -19%;
+}
+#f3 ul{
+    margin-left: -25%;
+}
+@media only screen and (max-width: 760px){  /*for mobile phone screens*/
+    section , #logo{
+        margin-left: 4%;
+    }
+    #logo{
+        margin-top: -30%;
     }
     header ul{
         font-size: 1.2em;
         flex-wrap: wrap-reverse;
         margin-left: auto;
-    }
-    #heb{
-        margin-left: -40px;
-        margin-top: 20px;
-        
-    }
-    #act{
-        margin-left: 80px;
-        margin-top: 20px;
+        margin-top: 10%;
     }
     #ins{
-        margin-top: -30px;
-        margin-left: 250px;
+        margin-top: 2%;
+        margin-left: 70%;
     }
-    #heb a:hover , #act a:hover{
+    #heb{
+        margin-left: -70px;
+        margin-top: 10%;
+    }
+    #act{
+        margin-top: 10%;
+    }
+    #heb a:hover , #act a:hover{  /*inversely border when hovering*/
         border-top-color: transparent;
         border-bottom-color: #0065FC;
         padding-bottom: 20px;
     }
-    #logo{
-        margin-top: -100px;
-    }
     h2{
-        font-size: 1.2em;
-        width:80%;
+        margin-top: 20%;
     }
-    p{
-        font-size: 0.8em;
-       
-    }
-    #section1 h2{
-        margin-top: 60px;
+    #section1 p{
+        font-size: 1em;
     }
     #local i{
-        width: 40px;
-        height:40px;
-        font-size: 1em;
-        border-bottom-left-radius: 20px;
-        border-top-left-radius: 20px;
-    }
-    button{
-        width: 45px;
-        height: 45px;
-        font-size: 1em;
-        border-radius: 15px;
-        margin-left: -30px;
-        
+        width: 60px;
     }
     #local input{
-        height: 40px;
         font-size: 1em;
-        width: 250px;
+        width: 60%;
+    }
+    button{
+        width: 60px;
+        font-size: 1em;
+        border-radius: 15px;
+        margin-left: -15%;
     }
     #filtres{
         margin-top: 30px;
@@ -409,36 +405,30 @@ footer a{
         height:30px;
         width: 50px;
     }
-    #filtres li{
-        height: 50px;
-       
-    }
     #éco{
-        width: 48%;
-        
+        width: 52%;
     }
     #fam{
-        width: 39%;
-        margin-left: 160px;
-        margin-top: -56px;
+        width: 46%;
+        margin-left: 170px;
+        margin-top: -60px;
     }
     #rom{
-        width: 45%;
+        width: 50%;
         margin-left: 0px;
         margin-top: 20px;
     }
     #ani{
-        width: 60%;
+        width: 62%;
         margin-left: 0px;
         margin-top: 20px;
+    }
+    #section1 nav p{
+        margin-top: -20px;
     }
     #info{
         margin-top: 10px;
     }
-    #section1 nav p{
-       margin-top: -20px;
-    }
-
     #info i{
         font-size: 1em;
         height: 30px;
@@ -448,55 +438,58 @@ footer a{
     #info p{
         margin-top: -30px;
         margin-left: 40px;
-        width: 70%;
+    }
+    #section2{  /*positioning the aside above the article and in column*/
+        margin-left: 0px;
+        flex-direction:column-reverse ;
     }
     #section2 aside{
-        margin-left: -220%;
+        margin-left: -2%;
         border-radius: 0px;
-        
-        height: 600px;
-        padding-top: 0px;
+        width: 102%;
+        padding-top: 1%;
+        height: 50%;
     }
     #section2 h2{
-        margin-left:20px;
-        font-size: 1.2em;
+        margin-left: 4%;
+        font-size: 1.3em;
     }
-    #section2 aside div i{
-        margin-top: 20px;
-        font-size: 1.2em;
-        margin-left: -30px;
+    #section2 aside h2 ,#section2 aside div i {
+        margin-top: 8%;
     }
-    aside li , #section2 article li{
-        margin-left: -30px;
-        width: 340px;
+    #section2 aside li{
+        width: 95%;
+        margin-left: -7%;
     }
     #section2 article{
-        margin-top: 580px;
-        margin-left:-20px;
+        margin-top: -15%;
         border-radius: 0px;
         background-color: white;
-       
-        
+        width: 100%;
+        padding-top: 0px;
     }
     #section2 article ul{
         flex-direction: column;
     }
-    #section2 article img{
+    #section2 article li{
         width: 340px;
+        margin-left: -7%;
+        margin-top: 20px;
     }
-    #plus{
-        margin-top: -20px;
+    #section2 article img{
+        width: 100%;
     }
-
     #section3{
-        margin-top: 1030px;
+        margin-top: 300%;
         
+    } 
+    #section3 h2{
+        font-size: 1.3em;
     }
     #section3 li{
-        margin-left: -15%;
         width: 100%;
         height: 190px;
-        
+        margin-left: -10%;
     }
     #section3 img{
         width: 100%;
@@ -506,24 +499,123 @@ footer a{
         margin-top: 20px;
     }
     footer{
-        height: 500px;
-        width: 380px;
-        margin-top: 30px;
-       margin-left: -20px;
-        flex-direction: column;
+        margin-top: 10%;
+        display: block;
+        text-align: left;
+        min-height: 400px;
     }
-    footer h3{
-        margin-left: 20px;
+    #f1 , #f2 , #f3{ /* alignment to left for title*/
+        margin-left: 5%;
     }
-    #propos {
-        margin-left: -20px;
+    #f1 ul , #f2 ul , #f3 ul{ /*alignment to left for list*/
+        margin-left: -10%;
     }
-    #heber{
-        margin-left: -20px;
-        margin-top: 20px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px){  /*for tablet-like screens*/
+    body{
+        margin-left: 2%;
     }
-    #assist{
-        margin-left: -20px;
-        margin-top: 20px;
-    }    
+    header ul{
+        margin-left: 0%;
+        justify-content: space-evenly;
+        margin-top: 5%;
+    }
+    #filtres{
+        flex-wrap: wrap;
+    }
+    #éco{
+        width: 50%;
+    }
+    #fam{
+        width: 40%;
+    }
+    #rom{
+        width: 45%;
+    }
+    #ani{
+        width: 60%;
+    }
+    #section1 h2{
+        width: 70%;
+    }
+    #section2{  /*positionning aside above article*/
+        flex-direction: column-reverse;
+    }
+    #section2 aside{
+        width: 102%;
+        margin-left: -2%;
+        padding-top: 0%;
+        height: 50%;
+        border-radius: 0px;
+    }
+    #section2 aside ul{  /*alignment list with wrap*/
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 2%;
+    }
+    #section2 aside li{
+        margin-left: 2%;
+        margin-top: 2%;
+    }
+    #section2 article{
+        width: 102%;
+        margin-left: -2%;
+        border-radius: 0px;
+        background-color: white;
+    }
+    #section2 article ul{
+        padding-left: 2%;
+    }
+    #section2 article li{
+        width: 45%;
+        margin-left: 2%;
+        margin-top: 2%;
+    }
+    #section2 article img{
+        width: 100%;
+    }
+    #section3{
+        margin-top: 40%;
+        width: 100%;
+        margin-left: 0%;
+    }
+    #section3 ul{
+        flex-wrap: wrap;
+        margin-left: 1%;
+    }
+    #section3 li{
+        width: 45%;
+        
+    }#section3 h2{
+        margin-left: 1%;
+    }
+    #section3 img{
+        width: 100%;
+    }
+    #port{
+        margin-left: 1%;
+    }
+    #fort , #frioul{
+        margin-left: 50%;
+    }
+    #cala{
+        margin-left: 1%;
+        margin-top: 5%;
+    }
+    #garde , #long{
+        margin-left: 50%;
+    }
+    footer li{
+        margin-left: -2%;
+    }
+}
+@media only screen and( max-width: 760px){  /*lign 612 to 620 changing the search button to a magnifying glass button*/
+    #rechercher a{
+        display: none;
+    }
+}
+@media only screen and (min-width: 768px){  /*return to search button */
+    #rechercher i{
+        display: none;
+    }
 }

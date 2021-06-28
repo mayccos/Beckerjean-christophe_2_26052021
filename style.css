@@ -347,7 +347,7 @@ footer h3{
 #f3 ul{
     margin-left: -25%;
 }
-@media only screen and (max-width: 760px){  /*for mobile phone screens*/
+@media only screen and (max-width: 767px){  /*for mobile phone screens*/
     section , #logo{
         margin-left: 4%;
     }
@@ -394,6 +394,16 @@ footer h3{
         font-size: 1em;
         border-radius: 15px;
         margin-left: -15%;
+    }
+    #rechercher{
+        display: none;
+    }
+    #loupe{
+        display: flex;
+    }
+    #loupe i{
+        padding-top: 15px;
+        
     }
     #filtres{
         margin-top: 30px;
@@ -609,13 +619,8 @@ footer h3{
         margin-left: -2%;
     }
 }
-@media only screen and( max-width: 760px){  /*lign 612 to 620 changing the search button to a magnifying glass button*/
-    #rechercher a{
-        display: none;
-    }
-}
 @media only screen and (min-width: 768px){  /*return to search button */
-    #rechercher i{
+    #loupe{
         display: none;
     }
 }

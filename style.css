@@ -11,16 +11,16 @@ body a:link{
 }header , section , footer h3{ /* small margin on the left */
     margin-left: 1%;
 }
-#ins a , i{               /* enhancement to register in the header and icons*/
+.ins a , i{               /* enhancement to register in the header and icons*/
     color:#0065FC ;
 }
-#heb a , #act a , #heb a:visited , #act a:visited , footer a{ /*black for the rest of the lists*/
+.heb a , .act a , .heb a:visited , .act a:visited , footer a{ /*black for the rest of the lists*/
     color: black;
 }
 header a{
     border: 2px solid transparent;
 }
-#heb a:hover , #act a:hover , #ins a:hover{ /*line 20 to 27 transparent border for border above headerites when hovering */
+.heb a:hover , .act a:hover , .ins a:hover{ /*line 20 to 27 transparent border for border above headerites when hovering */
     color: #0065FC;
     border-top-color: #0065FC;
     padding-top: 30px;
@@ -32,14 +32,14 @@ header ul{
     color: #0065FC;
     justify-content: space-evenly;
 }
-#logo{
+.logo{
     margin-top: -2%;  /*placement of the logo in relation to the list in header */
 }
-#local{
+.local{
     display: flex;  /* setting up the location div*/
     margin-top: 40px;
 }
-#local label i{   /*setting up inset with marker page icon*/
+.local label i{   /*setting up inset with marker page icon*/
     color: black;
     background-color:#F2F2F2;
     height: 50px;
@@ -51,7 +51,7 @@ header ul{
     vertical-align: middle;
     text-align: center;
 }
-#local input{   /*setting up text box for city choice*/
+.local input{   /*setting up text box for city choice*/
     height: 50px;
     border: 2px solid #F2F2F2;
     width: 235px;
@@ -74,24 +74,25 @@ button{  /*setting up button*/
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
     font-weight: bold;
-}#local button a , #local button i{
+}
+.local button a , .local button i{
     color: white;
 }
-#section1 nav{  /*lines 78 to 92 setting up the filter list */
+.section1 nav{  /*lines 78 to 92 setting up the filter list */
     display: flex;
     margin-top: 30px;
 }
-#section1 ul{
+.section1 ul{
     display: flex;
-    width: 80%;
+    width: 100%;
 }
-#section1 nav p{
+.section1 nav p{
     padding-top: 22px;
 }
-#section1 ul i{
+.section1 ul i{
     background-color: #DEEBFF;
 }
-#filtres i{  /* icon size and centering */
+.filtres i{  /* icon size and centering */
     border: 3px solid #DEEBFF;
     height: 30px;
     width: 50px;
@@ -100,38 +101,39 @@ button{  /*setting up button*/
     margin-top: -3px;
     text-align: center;
 }
-#ani{    /* lines 102 to 122 size of the different categories of filters + border */
+.ani{    /* lines 102 to 122 size of the different categories of filters + border */
     width: 220px;
     margin-left: 25px;
 }
-#éco{
+.éco{
     width: 193px;
 }
-#fam{
+.fam{
     width: 152px;
     margin-left: 25px;
 }
-#rom{
+.rom{
     width: 182px;
     margin-left: 25px;
 }
-#filtres li{
+.filtres li{
     border: 3px solid rgb(217, 217, 217);
     border-left: 0px;
     border-radius: 50px;
     height: 55px;
-}#filtres a:hover{  /* color when hovering*/
+}
+.filtres a:hover{  /* color when hovering*/
     color: #0065FC;
 }
-#section1 a , #section2 a , #section2 p , #section3 h3{  /* color when no hovering*/
+.section1 a , .section2 a , .section2 p , .section3 h3{  /* color when no hovering*/
     color: black;
     font-weight: 700;
 }
-#info{   /*lines 129 to 145 setting up icon and text info*/
+.info{   /*lines 129 to 145 setting up icon and text info*/
     text-align: left;
     margin-top: 40px;
 }
-#info i{
+.info i{
     border: 1px solid rgb(217, 217, 217) ;
     height: 25px;
     width: 25px;
@@ -141,87 +143,87 @@ button{  /*setting up button*/
     vertical-align: middle;
     margin-top: 370px;
 }
-#info p{
+.info p{
     margin-top: -20px;
 }
-#section2 h2 , #info p{  
+.section2 h2 , .info p{  
     margin-left: 40px;
 }
-#section2{   /*alignment aside and article*/
+.section2{   /*alignment aside and article*/
     display: flex;
     margin-top: 60px;
 }
-#section2 img{   /*avoid blurry images */
+.section2 img{   /*avoid blurry images */
     object-fit: cover;
 }
-#section2 article , #section2 aside{  /*item and aside skin and height */
+.section2 article , .section2 aside{  /*item and aside skin and height */
     background-color: #F2F2F2;
     border-radius: 20px;
     padding-top: 50px;
     height: 625px;
 }
-#section2 article{  /*lines 1612 to 169 width and setting aside and article on width*/
+.section2 article{  /*lines 1612 to 169 width and setting aside and article on width*/
     width: 880px;
     padding-right: 2%;
 }
-#section2 aside{
+.section2 aside{
     width: 420px;
     margin-left: 40px;
 }
-#sol{   /*line 170 to 175 setting up aside content*/
+.sol{   /*line 170 to 175 setting up aside content*/
     margin-top: -4%;
 }
-#coe , #hot{
+.coe , .hot{
     margin-top: 4%;
 }
-#can , #por , #mou , #mer , #pan , #ami , aside li{  /* border of the lists in section2*/
+.can , .por , .mou , .mer , .pan , .ami , aside li{  /* border of the lists in section2*/
     box-shadow: 3px 3px 3px gainsboro;
 }
-#ch{     /* alignment,deviation and line break for section2 item lists*/
+.ch{     /* alignment,deviation and line break for section2 item lists*/
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-#ch li{   /*characteristics of Article 2*/
+.ch li{   /*characteristics of Article 2*/
     width: 237px;
     height: 210px;
     background-color: white;
     border: 5px solid white;
     border-radius: 20px;
 }
-#section2 article img{ /* characteristics of the images of article 2*/
+.section2 article img{ /* characteristics of the images of article 2*/
     width: 237px;
     height: 117px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
-#section2  h2{
+.section2  h2{
     font-size: 1.5em;
 }
-#section2 article h3{
+.section2 article h3{
     font-size: 1.1em;
     padding-left: 15px;
     margin-top: 5px;
 }
-#section2 aside h3{ /*location and size photo titles*/
+.section2 aside h3{ /*location and size photo titles*/
     font-size: 1.1em;
     margin-left: 15px;
     
 }
-#mer , #pan , #ami { /* deviation from the 2nd line of photos*/
+.mer , .pan , .ami { /* deviation from the 2nd line of photos*/
    margin-top: 30px; 
 }
-#section2 article p{  /* setting up show more*/
+.section2 article p{  /* setting up show more*/
     padding-left: 15px;
     font-size: 1em;
     font-weight: normal;
 }
-#section2 aside p{  /*characteristics of the paragraphs under the photos section2 aside*/
+.section2 aside p{  /*characteristics of the paragraphs under the photos section2 aside*/
     font-size: 1em;
     font-weight: normal;
     margin-left: 15px;
 }
-#section2 aside img{  /*characteristics of image section2 aside*/
+.section2 aside img{  /*characteristics of image section2 aside*/
     height: 133px;
     width: 127px;
     border-bottom-left-radius: 20px;
@@ -249,14 +251,14 @@ aside p , aside h3{  /*adjusting the locations of paragraphs and  section2 aside
 aside div{  /*alignment logo and title*/
     display: flex;
 }
-#section3{  /*margin to section3*/
+.section3{  /*margin to section3*/
     margin-top: 60px;
 }
-#section3 h3{  /*characteristics titles under image*/
+.section3 h3{  /*characteristics titles under image*/
     font-size: 1em;
     padding-left: 15px;
 }
-#section3 li{  /*lines 258 to 316 formatting lists with image in section 3*/
+.section3 li{  /*lines 258 to 316 formatting lists with image in section 3*/
     width: 300px;
     border: 1px solid #F2F2F2;
     border-bottom-left-radius: 20px;
@@ -264,53 +266,54 @@ aside div{  /*alignment logo and title*/
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     box-shadow: 3px 3px 3px #F2F2F2;
-}#section3 img{
+}
+.section3 img{
     width: 300px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     object-fit: cover;
 }
-#port img , #cala img{
+.port img , .cala img{
     height: 390px;
 }
-#port{
+.port{
     margin-left: -40px;
     height: 440px;
 
 }
-#fort img{
+.fort img{
     height: 180px;
 }
-#fort{
+.fort{
     height: 235px;
     margin-left: 310px;
     margin-top: -441px;
 } 
-#frioul img{
+.frioul img{
     height: 110px;
 }   
-#frioul{
+.frioul{
     height: 165px;
     margin-left: 310px;
     margin-top: 38px;
 }
-#cala{
+.cala{
     height: 440px;
     margin-left: 660px;
     margin-top: -442px;
 }
-#garde img{
+.garde img{
     height: 140px;
 }
-#garde{
+.garde{
     height: 195px;
     margin-left: 1020px;
     margin-top: -441px;
 }
-#long img{
+.long img{
     height: 155px;
 }
-#long{
+.long{
     height: 210px;
     margin-left: 1020px;
     margin-top: 34px;
@@ -326,32 +329,32 @@ footer a{
     font-weight: normal;
     color: black;
 }
-#f1{
+.f1{
     margin-left: 1%;
 }
-#f2{
+.f2{
     margin-left: 12%;
 }
-#f3{
+.f3{
     margin-left: 17%;
 }
 footer h3{
     font-size: 1.1em;
 }
-#f1 ul{
+.f1 ul{
     margin-left: -15%;
 }
-#f2 ul{
+.f2 ul{
     margin-left: -19%;
 }
-#f3 ul{
+.f3 ul{
     margin-left: -25%;
 }
-@media only screen and (max-width: 767px){  /*for mobile phone screens*/
-    section , #logo{
+@media (min-width: 320px) and (max-width: 480px){  /*for mobile phone screens*/
+    section , .logo{
         margin-left: 4%;
     }
-    #logo{
+    .logo{
         margin-top: -30%;
     }
     header ul{
@@ -360,18 +363,18 @@ footer h3{
         margin-left: auto;
         margin-top: 10%;
     }
-    #ins{
+    .ins{
         margin-top: 2%;
         margin-left: 70%;
     }
-    #heb{
+    .heb{
         margin-left: -70px;
         margin-top: 10%;
     }
-    #act{
+    .act{
         margin-top: 10%;
     }
-    #heb a:hover , #act a:hover{  /*inversely border when hovering*/
+    .heb a:hover , .act a:hover{  /*inversely border when hovering*/
         border-top-color: transparent;
         border-bottom-color: #0065FC;
         padding-bottom: 20px;
@@ -379,13 +382,13 @@ footer h3{
     h2{
         margin-top: 20%;
     }
-    #section1 p{
+    .section1 p{
         font-size: 1em;
     }
-    #local i{
+    .local i{
         width: 60px;
     }
-    #local input{
+    .local input{
         font-size: 1em;
         width: 60%;
     }
@@ -395,117 +398,119 @@ footer h3{
         border-radius: 15px;
         margin-left: -15%;
     }
-    #rechercher{
+    .rechercher{
         display: none;
     }
-    #loupe{
+    .loupe{
         display: flex;
     }
-    #loupe i{
+    .loupe i{
         padding-top: 15px;
         
     }
-    #filtres{
+    .filtres{
         margin-top: 30px;
         margin-left: -80px;
         font-size: 0.8em;
-        flex-wrap: wrap;   
+        flex-wrap: wrap; 
+        width: 100%;  
     }
-    #filtres i{
+    .filtres i{
         height:30px;
         width: 50px;
     }
-    #éco{
-        width: 52%;
+    .éco{
+        width: 40%;
+        min-width: 150px;
     }
-    #fam{
-        width: 46%;
-        margin-left: 170px;
+    .fam{
+        width: 40%;
+        margin-left: 190px;
         margin-top: -60px;
     }
-    #rom{
+    .rom{
         width: 50%;
         margin-left: 0px;
         margin-top: 20px;
     }
-    #ani{
-        width: 62%;
-        margin-left: 0px;
+    .ani{
+        width: 60%;
+        margin-left: -3px;
         margin-top: 20px;
     }
-    #section1 nav p{
+    .section1 nav p{
         margin-top: -20px;
     }
-    #info{
+    .info{
         margin-top: 10px;
     }
-    #info i{
+    .info i{
         font-size: 1em;
         height: 30px;
         width: 30px;
         margin-top:20px;
     }
-    #info p{
+    .info p{
         margin-top: -30px;
         margin-left: 40px;
     }
-    #section2{  /*positioning the aside above the article and in column*/
+    .section2{  /*positioning the aside above the article and in column*/
         margin-left: 0px;
         flex-direction:column-reverse ;
     }
-    #section2 aside{
-        margin-left: -2%;
+    .section2 aside{
+        margin-left: 0;
         border-radius: 0px;
         width: 102%;
         padding-top: 1%;
         height: 50%;
     }
-    #section2 h2{
+    .section2 h2{
         margin-left: 4%;
         font-size: 1.3em;
     }
-    #section2 aside h2 ,#section2 aside div i {
+    .section2 aside h2 , .section2 aside div i {
         margin-top: 8%;
     }
-    #section2 aside li{
+    .section2 aside li{
         width: 95%;
         margin-left: -7%;
     }
-    #section2 article{
+    .section2 article{
         margin-top: -15%;
         border-radius: 0px;
         background-color: white;
         width: 100%;
         padding-top: 0px;
     }
-    #section2 article ul{
+    .section2 article ul{
         flex-direction: column;
     }
-    #section2 article li{
+    .section2 article li{
         width: 340px;
         margin-left: -7%;
         margin-top: 20px;
     }
-    #section2 article img{
+    .section2 article img{
         width: 100%;
     }
-    #section3{
+    .section3{
         margin-top: 300%;
         
     } 
-    #section3 h2{
+    .section3 h2{
         font-size: 1.3em;
     }
-    #section3 li{
+    .section3 li{
         width: 100%;
         height: 190px;
         margin-left: -10%;
     }
-    #section3 img{
+    .section3 img{
         width: 100%;
         height: 135px;
     }
-    #fort , #frioul , #cala , #garde , #long{
+    .fort , .frioul , .cala , .garde , .long{
         margin-top: 20px;
     }
     footer{
@@ -514,14 +519,14 @@ footer h3{
         text-align: left;
         min-height: 400px;
     }
-    #f1 , #f2 , #f3{ /* alignment to left for title*/
+    .f1 , .f2 , .f3{ /* alignment to left for title*/
         margin-left: 5%;
     }
-    #f1 ul , #f2 ul , #f3 ul{ /*alignment to left for list*/
+    .f1 ul , .f2 ul , .f3 ul{ /*alignment to left for list*/
         margin-left: -10%;
     }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px){  /*for tablet-like screens*/
+@media (min-width: 768px) and (max-width: 1024px){  /*for tablet-like screens*/
     body{
         margin-left: 2%;
     }
@@ -530,97 +535,275 @@ footer h3{
         justify-content: space-evenly;
         margin-top: 5%;
     }
-    #filtres{
+    .filtres{
         flex-wrap: wrap;
     }
-    #éco{
-        width: 50%;
-    }
-    #fam{
-        width: 40%;
-    }
-    #rom{
+    .éco{
         width: 45%;
     }
-    #ani{
-        width: 60%;
+    .fam{
+        width: 40%;
     }
-    #section1 h2{
+    .rom{
+        width: 45%;
+        margin-left: 0px;
+    }
+    .ani{
+        width: 60%;
+        margin-left: 0px;
+    }
+    .section1 h2{
         width: 70%;
     }
-    #section2{  /*positionning aside above article*/
+    .section2{  /*positionning aside above article*/
         flex-direction: column-reverse;
     }
-    #section2 aside{
-        width: 102%;
-        margin-left: -2%;
+    .section2 aside{
+        width: 101%;
+        margin-left: -1%;
         padding-top: 0%;
         height: 50%;
         border-radius: 0px;
     }
-    #section2 aside ul{  /*alignment list with wrap*/
+    .section2 aside ul{  /*alignment list with wrap*/
         display: flex;
         flex-wrap: wrap;
         padding-left: 2%;
     }
-    #section2 aside li{
+    .section2 aside li{
         margin-left: 2%;
         margin-top: 2%;
     }
-    #section2 article{
+    .section2 article{
         width: 102%;
         margin-left: -2%;
         border-radius: 0px;
         background-color: white;
     }
-    #section2 article ul{
+    .section2 article ul{
         padding-left: 2%;
     }
-    #section2 article li{
+    .section2 article li{
         width: 45%;
         margin-left: 2%;
         margin-top: 2%;
     }
-    #section2 article img{
+    .section2 article img{
         width: 100%;
     }
-    #section3{
+    .section3{
         margin-top: 40%;
         width: 100%;
         margin-left: 0%;
     }
-    #section3 ul{
+    .section3 ul{
         flex-wrap: wrap;
         margin-left: 1%;
     }
-    #section3 li{
+    .section3 li{
         width: 45%;
         
-    }#section3 h2{
+    }.section3 h2{
         margin-left: 1%;
     }
-    #section3 img{
+    .section3 img{
         width: 100%;
     }
-    #port{
+    .port{
         margin-left: 1%;
     }
-    #fort , #frioul{
+    .fort , .frioul{
         margin-left: 50%;
     }
-    #cala{
+    .cala{
         margin-left: 1%;
         margin-top: 5%;
     }
-    #garde , #long{
+    .garde , .long{
         margin-left: 50%;
     }
     footer li{
         margin-left: -2%;
     }
 }
-@media only screen and (min-width: 768px){  /*return to search button */
-    #loupe{
+@media (min-width: 768px){  /*return to search button */
+    .loupe{
         display: none;
     }
 }
+@media (min-width: 481px) and (max-width: 767px){  /*intermediate categories mobile screen*/
+    section , .logo{
+        margin-left: 4%;
+    }
+    .logo{
+        margin-top: -20%;
+    }
+    header ul{
+        font-size: 1.2em;
+        flex-wrap: wrap-reverse;
+        margin-left: auto;
+        margin-top: 10%;
+    }
+    .ins{
+        margin-top:-3%;
+        margin-left: 70%;
+    }
+    .heb{
+        margin-left: -70px;
+        margin-top: 10%;
+    }
+    .act{
+        margin-top: 10%;
+    }
+    .heb a:hover , .act a:hover{  /*inversely border when hovering*/
+        border-top-color: transparent;
+        border-bottom-color: #0065FC;
+        padding-bottom: 20px;
+    }
+    h2{
+        margin-top: 20%;
+    }
+    .section1 p{
+        font-size: 1em;
+    }
+    .local i{
+        width: 60px;
+    }
+    .local input{
+        font-size: 1em;
+        width: 60%;
+    }
+    button{
+        width: 60px;
+        font-size: 1em;
+        border-radius: 15px;
+        margin-left: -15%;
+    }
+    .rechercher{
+        display: none;
+    }
+    .loupe{
+        display: flex;
+    }
+    .loupe i{
+        padding-top: 15px;
+        
+    }
+    .filtres{
+        margin-top: 30px;
+        margin-left: -80px;
+        font-size: 0.8em;
+        flex-wrap: wrap; 
+        width: 100%;  
+    }
+    .filtres i{
+        height:30px;
+        width: 50px;
+    }
+    .éco{  /*lign 703 to 720 changes in sizes and margins to avoid overlapping filters*/
+        width: 35%;
+    }
+    .fam{
+        width: 30%;
+        margin-left: 5%;
+        
+    }
+    .rom{
+        width: 35%;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .ani{
+        width: 40%;
+        margin-left: 5%;
+        margin-top: 20px;
+    }
+    .section1 nav p{
+        margin-top: -20px;
+    }
+    .info{
+        margin-top: 10px;
+    }
+    .info i{
+        font-size: 1em;
+        height: 30px;
+        width: 30px;
+        margin-top:20px;
+    }
+    .info p{
+        margin-top: -30px;
+        margin-left: 40px;
+    }
+    .section2{  /*positioning the aside above the article and in column*/
+        margin-left: 0px;
+        flex-direction:column-reverse ;
+    }
+    .section2 aside{
+        margin-left: 0;
+        border-radius: 0px;
+        width: 102%;
+        padding-top: 1%;
+        height: 50%;
+    }
+    .section2 h2{
+        margin-left: 4%;
+        font-size: 1.3em;
+    }
+    .section2 aside h2 , .section2 aside div i {
+        margin-top: 8%;
+    }
+    .section2 aside li{
+        width: 95%;
+        margin-left: -3%;
+    }
+    .section2 article{
+        margin-top: -15%;
+        border-radius: 0px;
+        background-color: white;
+        width: 100%;
+        padding-top: 0px;
+    }
+    .section2 article ul{
+        flex-direction: column;
+    }
+    .section2 article li{
+        width: 100%;
+        margin-left: -3%;
+        margin-top: 20px;
+    }
+    .section2 article img{
+        width: 100%;
+    }
+    .section3{
+        margin-top: 220%;
+        
+    } 
+    .section3 h2{
+        font-size: 1.3em;
+    }
+    .section3 li{   /*width in % for better adaptability of li+modification left margin*/
+        width: 100%;
+        height: 190px;
+        margin-left: -7%;
+    }
+    .section3 img{
+        width: 100%;
+        height: 135px;
+    }
+    .fort , .frioul , .cala , .garde , .long{
+        margin-top: 20px;
+    }
+    footer{
+        margin-top: 10%;
+        display: block;
+        text-align: left;
+        min-height: 400px;
+    }
+    .f1 , .f2 , .f3{ /* alignment to left for title*/
+        margin-left: 5%;
+    }
+    .f1 ul , .f2 ul , .f3 ul{ /*alignment to left for list*/
+        margin-left: -10%;
+    }
+}
+
